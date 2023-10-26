@@ -1,5 +1,3 @@
-// Pong game
-
 import Config from "./Config.js"
 import Canvas from "./Canvas.js"
 import Pong from "./Pong.js";
