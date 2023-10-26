@@ -11,15 +11,15 @@ class Main {
         this.pong   = new Pong(this.cnf, this.canvas.ctx);
 
         this.pong.controls(this.canvas.canvas)
-        this.gameLoop();
+        this.#gameLoop();
     }
 
-    static gameLoop() {
+    static #gameLoop() {
         this.canvas.update();
         this.pong.update();
 
         if (!this.pong.end)
-            requestAnimationFrame(this.gameLoop.bind(this))
+            requestAnimationFrame(this.#gameLoop.bind(this))
     }
 
 }
